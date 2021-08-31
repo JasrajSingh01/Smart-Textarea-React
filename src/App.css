@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    outline: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(images/cool-background\ 2.svg);
+    background-color: #11275e;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+.main h1 {
+    padding: 20px 0;
+    font-size: 54px;
+}
+
+.main .todo-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .todo-form .todo-input {
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    background-color: rgba(224, 222, 221, 0.3);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.main .todo-form .todo-input::placeholder {
+    color: white;
+}
+
+.main .todo-form .todo-btn {
+    cursor: pointer;
+    padding: 10px 30px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: rgba(50, 170, 30);
+    margin-bottom: 10px;
+}
+
+.main .todo-form .todo-btn:hover {
+    background-color: rgba(50, 170, 30, 0.8);
+}
+
+.tasks {
+    display: flex;
+}
+
+.main .task {
+    display: flex;
+    margin: 3px 0;
+    padding: 10px 20px;
+    min-width: 529px;
+    backdrop-filter: blur(10px);
+    justify-content: space-between;
+    background-color: rgba(224, 222, 221, 0.3);
+    border-radius: 5px;
+    align-items: center;
+    transition: 0.1s all;
+}
+
+.main .task:hover {
+    padding: 10px 20px;
+    transform: scale(1.1);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.main .task p {
+    margin-right: 10px
+}
+
+.main .delete-btn {
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: rgba(215, 27, 27);
+    cursor: pointer;
+}
+
+.main .delete-btn:hover {
+    background-color: rgb(215, 27, 27, 0.8);
+}
+
+.todo-input::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+}
+ 
+.todo-input::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 100px;
+}
+ 
+.todo-input::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 100px;
+}
