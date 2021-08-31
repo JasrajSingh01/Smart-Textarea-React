@@ -73,7 +73,7 @@
 
 .main .task:hover {
     padding: 10px 20px;
-    transform: scale(1.1);
+    transform: scale(1.03);
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.5);
 }
