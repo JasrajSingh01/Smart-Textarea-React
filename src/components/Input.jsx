@@ -6,7 +6,7 @@ function Input(props) {
   let [input, setInput] = useState("");
 
   const inputHandler = (e) => {
-    if (count <150) {
+    if (count <=149) {
       setInput(e.target.value);
       setCount(e.target.value.length);
     }
